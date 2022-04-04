@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: white;
   }
   
   figure {
@@ -11,7 +11,7 @@ body {
     margin: 0px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: grey;
   }
   li {
     float: left;
@@ -20,17 +20,17 @@ body {
   li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 16px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: cadetblue;
+    background-color: lightblue;
   }
   
   .active {
-    background-color: cadetblue;
+    background-color: darkblue;
   }
   
   li {
@@ -45,7 +45,7 @@ body {
     height: 1px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #333;
+    background-color: blue;
   }
   
   input {
