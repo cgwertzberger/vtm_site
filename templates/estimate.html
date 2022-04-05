@@ -2,10 +2,10 @@
 
 {% block body %}
 <head>
-	<!DOCTYPE html>
-	<title>"estimate.html"</title>
-	<link rel="stylesheet" href="../static/css/stylesheet.css">
-	</head>
+    <!DOCTYPE html>
+    <title>"estimate.html"</title>
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    </head>
 <nav>
     <ul>
       <li><a href="./index.html">Home</a></li>
@@ -14,19 +14,19 @@
     </ul>
   </nav>
 
-<h2> Vertical Tank MaintenanceEstimator </h2>
-<form action="/estimate.html" method="POST">
-	<label for="radius"> Radius in inches:</label>
-	<input type="number" id="radius" name="radius" autofocus required />
-	<br />
-	<label for="height">Height in inches:</label>
-	<input type="number" id="height" name="height" />
-	<br />
-	<input type="submit" id="submit" value="Calculate Estimate">
-	<input type="reset" value="Clear">
+<h2> Vertical Tank Maintenance Estimator </h2>
+<form action="/math" method="POST">
+    <label for="radius"> Radius in inches:</label>
+    <input type="number" id="radius" name="radius" autofocus required />
+    <br />
+    <label for="height">Height in inches:</label>
+    <input type="number" id="height" name="height" />
+    <br />
+    <input type="submit" id="submit" value="Calculate Estimate">
+    <input type="reset" value="Clear">
 </form>
-<br />	
-{% if quote %}
- The estimate for painting is {{quote}}.
+<br />  
+{% if Total_Cost %}
+ The estimate for painting is {{Total_Cost}}.
 {% endif %}
 {% endblock %}
