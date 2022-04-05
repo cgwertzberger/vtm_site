@@ -16,7 +16,7 @@ def index():
 def about():
     return render_template('about.html', pageTitle='About Us')
 
-@app.route('/estimate.html', methods=['GET', 'POST'])
+@app.route('/estimate', methods=['GET', 'POST'])
 def estimate():
     if request.method == 'POST':
         form = request.form
